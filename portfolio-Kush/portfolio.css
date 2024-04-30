@@ -1,0 +1,195 @@
+:root {
+    --primary-color: #29a598;
+    --text-color: #394c4a;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 110%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    color: #394c4a;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.header-background {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.103)), 
+                url("https://images.pexels.com/photos/3805983/pexels-photo-3805983.jpeg") center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Unica One', cursive;
+    font-size: 1.2rem;
+}
+
+.header-content img {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+.header-content h1, .header-content p {
+    margin: 0.5rem 0;
+    font-family: 'Unica One', cursive;
+    color: white;
+
+}
+
+#about {
+    background-color: #e6dfdfeb; 
+    padding-left:5px; 
+    padding-right: 5px;
+    margin: 20px; 
+    border-radius: 0.5%;
+    text-align: center;
+    
+}
+
+#camera {
+    display: flex;
+}
+
+.profile-photo {
+    max-width: 100%;
+    height: auto; 
+    box-align : left;
+    border-radius: 20%; 
+}
+
+#infop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    align-content: left;
+    vertical-align: middle;
+    align-self: left;
+    box-align : left;
+    max-width: 800px;
+    box-align: right;
+    padding-left: 20px;
+}
+
+#dp {
+    
+    max-width: 1000px;
+
+    align-items: left;
+    align-content: left;
+    align-self: left;
+    box-align : left;
+}
+
+#portfolio {
+    background-color: #1c1c1bae; 
+    padding: 5px;
+    border-radius: 0.5%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact {
+    
+    background-color: #676761bc; 
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+}
+
+.project {
+    width: 350px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: inline-block;
+    line-height: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color:rgba(0, 0, 0, 0.982);
+    /* background-image: url("https://qph.cf2.quoracdn.net/main-qimg-639f10044a9e848bc953867b62fa96f7");
+     */
+}
+
+
+
+.td-btn {
+    padding: 12px 36px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+     background-color: #0fbfbf; 
+
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    color: rgb(46, 42, 42);
+}
+
+
+h2 {
+    color: #333;
+    font-family: 'Unica One', cursive;
+    font-size: 2.3rem;
+}
+
+a {
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #272c2a;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+  
+  .profile-photo {
+        width: 50%; 
+        margin: 0 auto;
+    }
+}
